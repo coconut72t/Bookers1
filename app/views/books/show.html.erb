@@ -1,5 +1,10 @@
 <div class="field">
-  <p id="notice">Book was successfully created.</p>
+    <% if flash[:notice] %>
+    <div class="flash">
+      <%= flash[:notice] %>
+    </div>
+    <% end %>
+  </div>
 <p>
   <strong>Title:</strong>
   <%= @book.title %>
@@ -11,4 +16,4 @@
 </div>
 <%= link_to "Edit", edit_book_path(@book.id) %>
 |
-<%= link_to "Back", "/Books" %>
+<%= link_to "Back", books_path %>

@@ -35,6 +35,44 @@ tr {
   margin-bottom: 10px;
 }
 
-#notice {
+.flash {
   color: green;
+}
+
+#error-explanation {
+  font-size: 12px;
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error-explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0;
+  background-color: #c00;
+  color: #fff;
+}
+
+ul {
+  font-size: 12px;
+  list-style: square;
+  margin:33px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+text_field:invalid {
+  padding: 2px;
+  background-color: red;
+  display: table;
 }
